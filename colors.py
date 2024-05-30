@@ -1,0 +1,20 @@
+pink10='#FFAACC'#Розовая гвоздика
+pink11='#DE5D83'#Румянец
+pink12='#FFBCD9'#Сладкая вата
+pink13='#C08081'#Старинный розовый
+pink14='#B57281' #Турецкий розовый
+
+white1='#F5FFFA'#мятно-кремовый
+white2='#F0FFF0'#медовая роса
+white3='#faf0f0'#pink light
+w='#2b2628'
+c='#3c3c44'
+n='#2c343d'
+pink15='#eda4a5'
+pink16='#a87475'
+pink17='#f2d8d3'
+pink18='#eac1bd'
+pink19="#e7bbb8"
+pink20='#fce3de'
+pink21='#fcc2b6'
+pink22='#ab9c9e'
