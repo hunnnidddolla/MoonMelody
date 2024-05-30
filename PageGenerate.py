@@ -60,28 +60,14 @@ class PageGenerate(UserControl):
         self.player = None
         self.controls.clear()
         self.controls.extend([Container(padding=padding.only(left=40, top=20), content=Column(controls=[
-            self.input,self.drop_model,self.duration_slider,
-            ElevatedButton(
-                content=Row([
-                    Icon(name=icons.WAVES_SHARP, color=c.pink17, size=18),
-                    Text(value='Generate', size=18, color=c.pink17)
-                ], alignment='center'),width=200,height=50,
-                on_click=lambda e: self.generate_to_user_prompt_sync(e),
-                bgcolor=colors.with_opacity(0.45, c.pink17),
-                on_hover=lambda e: self.Highlight(e),
-            ),
-            Divider(height=5, color='transparent'),
-            Column(
-                controls=[
-                    self.player.build() if self.player else Row(controls=[
-                        Rive(src='Animation/new_file (11).riv', width=150, height=150, scale=1)], alignment='center')
-                ],
-                width=900,
-                height=500,
-                horizontal_alignment=alignment.bottom_center,
-                expand=True
-            ),
-        ]))])
+        self.input,self.drop_model,self.duration_slider,ElevatedButton(
+        content=Row([Icon(name=icons.WAVES_SHARP, color=c.pink17, size=18),
+        Text(value='Generate', size=18, color=c.pink17)], alignment='center'),width=200,height=50,
+        on_click=lambda e: self.generate_to_user_prompt_sync(e),bgcolor=colors.with_opacity(0.45, c.pink17),
+        on_hover=lambda e: self.Highlight(e),),Divider(height=5, color='transparent'),
+        Column(controls=[self.player.build() if self.player else Row(controls=[
+        Rive(src='Animation/new_file (11).riv', width=150, height=150, scale=1)], alignment='center')],
+        width=900,height=500,horizontal_alignment=alignment.bottom_center,expand=True),]))])
         self.update()
 
     def on_model_change(self, e):
