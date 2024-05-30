@@ -87,7 +87,7 @@ StrEnum==0.4.15
 supabase==2.4.5
 supafunc==0.4.5
 sympy==1.12
-tbb==2021.11.0
+tbb==2021.10.0
 text-unidecode==1.3
 tokenizers==0.19.1
 torch==2.3.0+cu118
